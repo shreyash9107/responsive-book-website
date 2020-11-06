@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Books</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./Style.css" />
+  <link rel="stylesheet" href="./mobile-style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid p-0">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+          <i class="fas fa-book-reader fa-2x mx-3"></i>Books</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-align-right text-light"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mr-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">HOME
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">COURSE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PRICE</a>
+            </li>
+            <li class="nav-item dropdown">
+              <div class="dropdown">
+                <a href="#" class="nav-link">PAGES</a>
+                <div class="dropdown-content">
+                  <a href="#">Generic</a>
+                  <a href="#">Element</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FACT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-7 col-sm-12  text-white">
+         
+          <h1>EXCITING ADVENTURE</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere accusamus eum dignissimos ipsa sequi expedita.
+          </p>
+          <button class="btn btn-light px-5 py-2 primary-btn">
+            By now for $5.99
+          </button>
+        </div>
+        <div class="col-md-5 col-sm-12  h-25">
+          <img class="image" src="https://images.indianexpress.com/2020/04/books_1200.jpg" alt="Book" />
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="section-1">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-6 col-12">
+            <div class="pray">
+              <img src="data:image/jpeg;base64,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" alt="Pray" class="" />
+            </div>
+          </div>
+          <div class="col-md-6 col-12">
+            <div class="panel text-left">
+              <h1>Mr. Devid Smith</h1>
+              <p class="pt-4">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere iure adipisci harum ducimus accusantium, repudiandae aperiam
+                voluptatum, id ex ratione omnis reiciendis possimus officiis.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi vitae, tenetur quidem eum aliquid vel labore sint placeat
+                ad deserunt consectetur fugit ullam. Eius unde neque ducimus obcaecati ipsum quos vero totam recusandae hic
+                expedita nemo sit, illum harum. Quisquam impedit ullam itaque facere et ad molestiae quod reprehenderit excepturi!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-2 container-fluid p-0">
+      <div class="cover">
+        <div class="overlay"></div>
+        <div class="content text-center">
+          <h1>Some Features That Made Us Unique</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, eum?
+          </p>
+        </div>
+      </div>
+      <div class="container-fluid text-center">
+        <div class="numbers d-flex flex-md-row flex-wrap justify-content-center">
+          <div class="rect">
+            <h1>2345</h1>
+            <p>Happy Client</p>
+          </div>
+          <div class="rect">
+            <h1>6784</h1>
+            <p>Cups Coffee</p>
+          </div>
+          <div class="rect">
+            <h1>1056</h1>
+            <p>Tickets Submitted</p>
+          </div>
+          <div class="rect">
+            <h1>9152</h1>
+            <p>Total Projects</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="purchase text-center">
+        <h1>Purchase Whatever You Want</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+        <div class="cards">
+          <div class="d-flex flex-row justify-content-center flex-wrap">
+            <div class="card">
+              <div class="card-body">
+                <div class="title">
+                  <h5 class="card-title">PDF</h5>
+                </div>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in.
+                </p>
+                <div class="pricing">
+                  <h1>$77.99</h1>
+                  <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5">Purchase Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div class="title">
+                  <h5 class="card-title">E-book</h5>
+                </div>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in.
+                </p>
+                <div class="pricing">
+                  <h1>$99.99</h1>
+                  <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5">Purchase Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div class="title">
+                  <h5 class="card-title">Print Copy</h5>
+                </div>
+                <p class="card-text">
+                  With supporting text below as a natural lead-in.
+                </p>
+                <div class="pricing">
+                  <h1>$58.99</h1>
+                  <a href="#" class="btn btn-dark px-5 py-2 primary-btn mb-5">Purchase Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-3 container-fluid p-0 text-center">
+      <div class="row">
+        <div class="col-md-12 col-sm-12">
+          <h1>Download Our App for all Platform</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum exercitationem alias perspiciatis omnis quod possimus odit
+            voluptatum! Sunt ea quasi praesentium, tenetur doloribus animi obcaecati, sint nemo quae laudantium iusto unde
+            eaque nostrum nobis voluptatum
+          </p>
+        </div>
+      </div>
+      <div class="platform row">
+        <div class="col-md-6 col-sm-12 text-right">
+          <div class="desktop shadow-lg">
+            <div class="d-flex flex-row justify-content-center">
+              <i class="fas fa-desktop fa-3x py-2 pr-3"></i>
+              <div class="text text-left">
+                <h3 class="pt-1 m-0">Desktop</h3>
+                <p class="p-0 m-0">On website</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 text-left">
+          <div class="desktop shadow-lg">
+            <div class="d-flex flex-row justify-content-center">
+              <i class="fas fa-mobile-alt fa-3x py-2 pr-3"></i>
+              <div class="text text-left">
+                <h3 class="pt-1 m-0">On Mobile</h3>
+                <p class="p-0 m-0">On Play Store</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="section-4">
+      <div class="container text-center">
+        <h1 class="text-dark">What our Reader's Say about us</h1>
+        <p class="text-secondary">Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div class="team row ">
+        <div class="col-md-4 col-12 text-center">
+            <div class="card mr-2 d-inline-block shadow-lg">
+                <div class="card-img-top">
+                  <img src="../assets/UI-face-3.jpg" class="img-fluid border-radius p-4" alt="">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Blalock Jolene</h3>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iure autem recusandae, veniam, illo dolor soluta assumenda
+                    minima quia velit officia sit exercitationem nam ipsa, repellendus aut facilis quasi voluptas!
+                  </p>
+                  <a href="#" class="text-secondary text-decoration-none">Go somewhere</a>
+                  <p class="text-black-50">CEO at Google</p>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-4 col-12">
+            <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
+                <div class="carousel-inner text-center">
+                  <div class="carousel-item active">
+                    <div class="card mr-2 d-inline-block shadow">
+                      <div class="card-img-top">
+                        <img src="../assets/UI-face-1.jpg" class="img-fluid rounded-circle w-50 p-4" alt="">
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title">Allen Agnes</h3>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iure autem recusandae, veniam, illo dolor soluta assumenda
+                          minima quia velit officia sit exercitationem nam ipsa, repellendus aut facilis quasi voluptas!
+                        </p>
+                        <a href="#" class="text-secondary text-decoration-none">Go somewhere</a>
+                        <p class="text-black-50">CEO at Google</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="card  d-inline-block mr-2 shadow">
+                      <div class="card-img-top">
+                        <img src="../assets/UI-face-2.jpg" class="img-fluid rounded-circle w-50 p-4" alt="">
+                      </div>
+                      <div class="card-body">
+                        <h3 class="card-title">Amiel Barbara</h3>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iure autem recusandae, veniam, illo dolor soluta assumenda
+                          minima quia velit officia sit exercitationem nam ipsa, repellendus aut facilis quasi voluptas!
+                        </p>
+                        <a href="#" class="text-secondary text-decoration-none">Go somewhere</a>
+                        <p class="text-black-50">CEO at Google</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+        </div>
+        </div>
+        <div class="col-md-4 col-12 text-center">
+            <div class="card mr-2 d-inline-block shadow-lg">
+                <div class="card-img-top">
+                  <img src="../assets/UI-face-4.jpg" class="img-fluid border-radius p-4" alt="">
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Olivia Louis</h3>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iure autem recusandae, veniam, illo dolor soluta assumenda
+                    minima quia velit officia sit exercitationem nam ipsa, repellendus aut facilis quasi voluptas!
+                  </p>
+                  <a href="#" class="text-secondary text-decoration-none">Go somewhere</a>
+                  <p class="text-black-50">CEO at Google</p>
+                </div>
+              </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container-fluid p-0">
+      <div class="row text-left">
+        <div class="col-md-5 col-sm-5">
+          <h4 class="text-light">About us</h4>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum maxime ea similique illum corrupti</p>
+          <p class="pt-4 text-muted">Copyright ©2019 All rights reserved
+          </p>
+        </div>
+        <div class="col-md-5 col-sm-12">
+          <h4 class="text-light">Newsletter</h4>
+          <p class="text-muted">Stay Updated</p>
+          <form class="form-inline">
+            <div class="col pl-0">
+              <div class="input-group pr-5">
+                <input type="text" class="form-control bg-dark text-white" id="inlineFormInputGroupUsername2" placeholder="Email">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="fas fa-arrow-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-2 col-sm-12">
+          <h4 class="text-light">Follow Us</h4>
+          <p class="text-muted">Let us be social</p>
+          <div class="column text-light">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
